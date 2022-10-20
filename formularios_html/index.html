@@ -1,0 +1,21 @@
+<!--Fórmularios são lugares no HTML em que o usuário fará uma entrada, com o input. Essas informações serão armazenadas pelo servidor, provavrlmente por um banco de dados.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form name="signup" method="post" action="#" target="_blank" autocomplete="off" onsubmit="alert('Formulário enviado!')">
+      <!--O get leva as informações diretamente pela URL, sendo assim não é seguro em caso de senhas, já o método post ele envia uma requisição no body para o servidor que ele quer se comunicar-->
+      <label>Nome: </label><input type="text" name="name" /> <br />
+      <label>Idade: </label><input type="number" name="age" min="0" max="99" step="1"/> <br />
+      <label>E-mail: </label> <input type="email" name="email"><br>
+      <label>Senha: </label><input type="password" name="password" /> <br />
+      <label>Upload de arquivo: </label><input type="file" multiple> <br>
+      <label>Maior de 18 anos? </label><input type="checkbox"><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
